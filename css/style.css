@@ -1,0 +1,81 @@
+/* line 1, /Users/melinda/Desktop/melinda-golden/scss/base/_base.scss */
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+
+/* line 1, /Users/melinda/Desktop/melinda-golden/scss/components/_navigation.scss */
+.navbar {
+  margin-bottom: 0;
+  z-index: 2;
+}
+
+/* line 6, /Users/melinda/Desktop/melinda-golden/scss/components/_navigation.scss */
+.navbar-default {
+  background-color: transparent;
+  border: 0;
+}
+
+/* line 9, /Users/melinda/Desktop/melinda-golden/scss/components/_navigation.scss */
+.navbar-default .navbar-brand {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* line 1, /Users/melinda/Desktop/melinda-golden/scss/components/_hero.scss */
+#hero {
+  background: url("http://via.placeholder.com/1400x650");
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -50px;
+  padding: 0 15px;
+}
+
+@media screen and (min-width: 767px) {
+  /* line 1, /Users/melinda/Desktop/melinda-golden/scss/components/_hero.scss */
+  #hero {
+    height: 650px;
+  }
+}
+
+/* line 15, /Users/melinda/Desktop/melinda-golden/scss/components/_hero.scss */
+#hero h2 {
+  color: #fff;
+  z-index: 1;
+  text-align: center;
+  font-size: 1.25em;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 767px) {
+  /* line 15, /Users/melinda/Desktop/melinda-golden/scss/components/_hero.scss */
+  #hero h2 {
+    width: 60%;
+    font-size: 2.25em;
+  }
+}
+
+/* line 26, /Users/melinda/Desktop/melinda-golden/scss/components/_hero.scss */
+#hero::after {
+  content: '';
+  background: linear-gradient(to right, rgba(58, 197, 202, 0.7) 0%, rgba(58, 177, 201, 0.7) 100%);
+  height: 350px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (min-width: 767px) {
+  /* line 26, /Users/melinda/Desktop/melinda-golden/scss/components/_hero.scss */
+  #hero::after {
+    height: 650px;
+  }
+}
+
+/*# sourceMappingURL=../css/style.map */

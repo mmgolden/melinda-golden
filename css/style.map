@@ -1,0 +1,34 @@
+{
+	"version": 3,
+	"file": "../scss/style.css",
+	"sources": [
+		"../scss/style.scss",
+		"../scss/utilities/_index.scss",
+		"../scss/utilities/_variables.scss",
+		"../scss/utilities/_mixins.scss",
+		"../scss/utilities/_placeholders.scss",
+		"../scss/base/_index.scss",
+		"../scss/base/_base.scss",
+		"../scss/layout/_index.scss",
+		"../scss/layout/_containers.scss",
+		"../scss/components/_index.scss",
+		"../scss/components/_navigation.scss",
+		"../scss/components/_hero.scss"
+	],
+	"sourcesContent": [
+		"// Global imports\n@import 'utilities/index',\n        'base/index',\n        'layout/index',\n        'components/index';",
+		"// Partial imports\n@import 'variables',\n        'mixins',\n        'placeholders';",
+		"// Font family\n$primary-font: 'Lato', sans-serif;",
+		"",
+		"",
+		"// Partial imports\n@import 'base';",
+		"body {\n    font-family: $primary-font;\n    font-size: 16px;\n}",
+		"// Partial imports\n@import 'containers';",
+		"",
+		"// Partial imports\n@import 'navigation',\n        'hero';",
+		".navbar {\n    margin-bottom: 0;\n    z-index: 2;\n}\n\n.navbar-default {\n    background-color: transparent;\n    border: 0;\n    .navbar-brand {\n        color: #fff;\n        text-transform: uppercase;\n    }\n}",
+		"#hero {\n    background: url('http://via.placeholder.com/1400x650');\n    background-size: cover;\n    background-position: 50% 50%;\n    height: 350px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    position: relative;\n    top: -50px;\n    padding: 0 15px;\n    @media screen and (min-width:767px) {\n        height: 650px;\n    }\n    h2 {\n        color: #fff;\n        z-index: 1;\n        text-align: center;\n        font-size: 1.25em;\n        line-height: 1.5;\n        @media screen and (min-width:767px) {\n            width: 60%;\n            font-size: 2.25em;\n        }\n    }\n    &::after {\n        content: '';\n        background: linear-gradient(to right, rgba(58,197,202,0.7) 0%,rgba(58,177,201,0.7) 100%); \n        height: 350px;\n        width: 100%;\n        position: absolute;\n        top: 0;\n        left: 0;\n        @media screen and (min-width:767px) {\n            height: 650px;\n        }\n    }\n}"
+	],
+	"mappings": ";AMAA,AAAA,IAAI,CAAC;EACD,WAAW,EJAA,MAAM,EAAE,UAAU;EIC7B,SAAS,EAAE,IAAK;CACnB;;;AIHD,AAAA,OAAO,CAAC;EACJ,aAAa,EAAE,CAAE;EACjB,OAAO,EAAE,CAAE;CACd;;;AAED,AAAA,eAAe,CAAC;EACZ,gBAAgB,EAAE,WAAY;EAC9B,MAAM,EAAE,CAAE;CAKb;;;AAPD,AAGI,eAHW,CAGX,aAAa,CAAC;EACV,KAAK,EAAE,IAAK;EACZ,cAAc,EAAE,SAAU;CAC7B;;;ACXL,AAAA,KAAK,CAAC;EACF,UAAU,EAAE,0CAAG;EACf,eAAe,EAAE,KAAM;EACvB,mBAAmB,EAAE,OAAQ;EAC7B,MAAM,EAAE,KAAM;EACd,OAAO,EAAE,IAAK;EACd,eAAe,EAAE,MAAO;EACxB,WAAW,EAAE,MAAO;EACpB,QAAQ,EAAE,QAAS;EACnB,GAAG,EAAE,KAAM;EACX,OAAO,EAAE,MAAO;CA2BnB;;AA1BG,MAAM,CAAN,MAAM,MAAM,SAAS,EAAE,KAAK;;EAXhC,AAAA,KAAK,CAAC;IAYE,MAAM,EAAE,KAAM;GAyBrB;;;;AArCD,AAcI,KAdC,CAcD,EAAE,CAAC;EACC,KAAK,EAAE,IAAK;EACZ,OAAO,EAAE,CAAE;EACX,UAAU,EAAE,MAAO;EACnB,SAAS,EAAE,MAAO;EAClB,WAAW,EAAE,GAAI;CAKpB;;AAJG,MAAM,CAAN,MAAM,MAAM,SAAS,EAAE,KAAK;;EApBpC,AAcI,KAdC,CAcD,EAAE,CAAC;IAOK,KAAK,EAAE,GAAI;IACX,SAAS,EAAE,MAAO;GAEzB;;;;AAxBL,AAAA,KAAK,AAyBA,OAAO,CAAC;EACL,OAAO,EAAE,EAAG;EACZ,UAAU,EAAE,mFAAe;EAC3B,MAAM,EAAE,KAAM;EACd,KAAK,EAAE,IAAK;EACZ,QAAQ,EAAE,QAAS;EACnB,GAAG,EAAE,CAAE;EACP,IAAI,EAAE,CAAE;CAIX;;AAHG,MAAM,CAAN,MAAM,MAAM,SAAS,EAAE,KAAK;;EAjCpC,AAAA,KAAK,AAyBA,OAAO,CAAC;IASD,MAAM,EAAE,KAAM;GAErB",
+	"names": []
+}

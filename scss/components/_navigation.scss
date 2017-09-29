@@ -1,0 +1,13 @@
+.navbar {
+    margin-bottom: 0;
+    z-index: 2;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border: 0;
+    .navbar-brand {
+        color: #fff;
+        text-transform: uppercase;
+    }
+}
