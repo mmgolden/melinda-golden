@@ -6,8 +6,71 @@
 .navbar-default {
     background-color: transparent;
     border: 0;
+    padding: 10px 0;
+    @media screen and (min-width:767px) {
+        padding: 20px 0;
+    }
+}
+
+.navbar-default.affix {
+    background: #fff;
+    transition: padding 0.8s;
+    box-shadow: 0px 3px 10px -2px rgba(0,0,0,0.25);
     .navbar-brand {
+        color: $primary-accent-color;
+    }
+    .navbar-nav>li>a {
+        color: $font-color;
+    }
+    @media screen and (min-width:767px) {
+        padding: 5px 0;
+    }
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.125em;
+    display: flex;
+    align-items: center;
+    &:hover {
         color: #fff;
-        text-transform: uppercase;
+    }
+    @media screen and (min-width:767px) {
+        font-size: $medium-font-size;
+    }
+    @media screen and (min-width:991px) {
+        font-size: $large-font-size;
+    }
+    img {
+        width: 30px;
+        display: inline-block;
+        margin-right: 10px;
+        @media screen and (min-width:767px) {
+            width: 40px;
+            margin-right: 15px;
+        }
+    }
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    text-transform: uppercase;
+    @media screen and (min-width:767px) {
+        font-size: 1.125em;
+    }
+}
+
+.navbar-default .navbar-nav>.active>a {
+    color: #fff;
+    background-color: transparent;
+}
+
+.nav>li {
+    @media screen and (min-width:991px) {
+        margin-right: 20px;
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }

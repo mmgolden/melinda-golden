@@ -3,11 +3,11 @@
     background-size: cover;
     background-position: 50% 50%;
     height: 350px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    top: -50px;
     padding: 0 15px;
     @media screen and (min-width:767px) {
         height: 650px;
@@ -16,7 +16,7 @@
         color: #fff;
         z-index: 1;
         text-align: center;
-        font-size: 1.25em;
+        font-size: $medium-font-size;
         line-height: 1.5;
         @media screen and (min-width:767px) {
             width: 60%;
