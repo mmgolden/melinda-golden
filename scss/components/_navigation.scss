@@ -1,3 +1,4 @@
+/************* Navbar *************/
 .navbar {
     margin-bottom: 0;
     z-index: 2;
@@ -7,30 +8,23 @@
     background-color: transparent;
     border: 0;
     padding: 10px 0;
+    .navbar-collapse {
+        background-color: #fff;
+    }
     @media screen and (min-width:767px) {
         padding: 20px 0;
+        .navbar-collapse {
+            background-color: transparent;
+        }
     }
 }
 
-.navbar-default.affix {
-    background: #fff;
-    transition: padding 0.8s;
-    box-shadow: 0px 3px 10px -2px rgba(0,0,0,0.25);
-    .navbar-brand {
-        color: $primary-accent-color;
-    }
-    .navbar-nav>li>a {
-        color: $font-color;
-    }
-    @media screen and (min-width:767px) {
-        padding: 5px 0;
-    }
-}
-
+/************* Logo *************/
 .navbar-default .navbar-brand {
     color: #fff;
     text-transform: uppercase;
-    font-size: 1.125em;
+    font-size: $small-font-size;
+    font-weight: 700;
     display: flex;
     align-items: center;
     &:hover {
@@ -42,28 +36,35 @@
     @media screen and (min-width:991px) {
         font-size: $large-font-size;
     }
-    img {
-        width: 30px;
-        display: inline-block;
-        margin-right: 10px;
-        @media screen and (min-width:767px) {
-            width: 40px;
-            margin-right: 15px;
+}
+
+#logo {
+    @include logo("../images/logo-light.svg");
+}
+
+.navbar-default.affix #logo {
+    @include logo("../images/logo-dark.svg");
+}
+
+/************* Menu links *************/
+.navbar-default .navbar-nav>li>a {
+    color: $primary-font-color;
+    text-transform: uppercase;
+    font-weight: 700;
+    &:focus,
+    &:hover {
+        color: $primary-font-color;
+    }
+    @media screen and (min-width:767px) {
+        color: #fff;
+        &:focus,
+        &:hover {
+            color: #fff;
         }
     }
-}
-
-.navbar-default .navbar-nav>li>a {
-    color: #fff;
-    text-transform: uppercase;
-    @media screen and (min-width:767px) {
-        font-size: 1.125em;
+    @media screen and (min-width:991px) {
+        font-size: $small-font-size;
     }
-}
-
-.navbar-default .navbar-nav>.active>a {
-    color: #fff;
-    background-color: transparent;
 }
 
 .nav>li {
@@ -73,4 +74,60 @@
             margin-right: 0;
         }
     }
+}
+
+.navbar-default .navbar-nav>.active>a {
+    color: $primary-font-color;
+    background-color: transparent;
+    @media screen and (min-width:767px) {
+        color: #fff;
+    }
+}
+
+.navbar-default .navbar-nav>.active:focus>a,
+.navbar-default .navbar-nav>.active:hover>a {
+    color: #fff;
+    background-color: transparent;
+}
+
+/************* Sticky navbar *************/
+.navbar-default.affix {
+    background: #fff;
+    padding: 0; 
+    transition: padding 0.8s;
+    box-shadow: 0px 3px 10px -2px rgba(0,0,0,0.25);
+    .navbar-brand {
+        color: $primary-accent-color;
+    }
+    .navbar-nav>li>a {
+        color: $primary-font-color;
+        transition: color 0.8s;
+        &:focus,
+        &:hover {
+            color: $primary-accent-color;
+        }
+    }
+    .navbar-nav>.active>a {
+        color: $primary-accent-color;
+        background-color: transparent;
+    }
+    @media screen and (min-width:767px) {
+        padding: 5px 0;
+    }
+}
+
+/************* Mobile toggle *************/
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    &:focus,
+    &:hover {
+        background-color: transparent;
+    }
+    .icon-bar {
+        background-color: #fff;
+    }
+}
+
+.navbar-default.affix .navbar-toggle .icon-bar {
+    background-color: $primary-font-color;
 }

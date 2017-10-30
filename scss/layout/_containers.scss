@@ -1,6 +1,91 @@
+/************* Containers *************/
+container {
+    max-width: 1400px;
+}
+
 section {
     padding: 60px 0;
     @media screen and (min-width:767px) {
         padding: 80px 0;
+    }
+}
+
+/************* About *************/
+.about-text {
+    font-size: $small-font-size;
+    line-height: 1.875em;
+}
+
+/************* Portfolio *************/
+#portfolio {
+    h2 {
+        margin-bottom: 60px;
+    }
+}
+
+.portfolio-item {
+    text-align: center;
+    h3 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+    h4 {
+        text-transform: uppercase;
+        font-size: $primary-font-size;
+        color: #9B9B9B;
+        margin-bottom: 30px;
+    }
+    p {
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width:767px) {
+        text-align: left;
+    }
+}
+
+/************* Contact *************/
+.social-icons {
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    li {
+        display: inline-block;
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    a {
+        background: $primary-accent-color;
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid $primary-accent-color;
+        transition: background 0.8s;
+        &:hover {
+            background: transparent;
+            i {
+                color: $primary-accent-color;
+            }
+        }
+    }
+    i {
+        color: #fff;
+        font-size: 24px;
+        line-height: 46px;
+    }
+}
+
+#medium {
+    background-image: url('../images/medium.svg');
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: 50% 50%;
+    &:hover {
+        background-image: url('../images/medium-dark.svg');
     }
 }

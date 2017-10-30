@@ -1,0 +1,22 @@
+/************* Form *************/
+.form-control {
+    background: #f0f0f0;
+    border: 0;
+    border-radius: 0%;
+    box-shadow: none;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+}
+
+.has-error .form-control {
+    margin-bottom: 10px;
+    box-shadow: none;
+}
+
+#contact .teal-btn {
+    width: 100%;
+}
+
+.btn.disabled {
+    opacity: 1;
+}

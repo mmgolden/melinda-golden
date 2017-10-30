@@ -1,5 +1,45 @@
+/************* General *************/
 body {
     font-family: $primary-font;
     font-size: 16px;
-    color: $font-color;
+    color: $primary-font-color;
+    position: relative;
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+    color: $primary-accent-color;
+}
+
+p {
+    margin-bottom: 0;
+    line-height: 1.75em;
+}
+
+section h2 {
+    font-size: $large-font-size;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.gray-bg {
+    background: #f6f6f6;
+}
+
+.teal-btn {
+    background: $primary-accent-color;
+    color: #fff;
+    border-radius: 0;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    font-weight: 700;
+    border: 2px solid $primary-accent-color;
+    transition: background 0.8s;
+    &:focus,
+    &:hover {
+        color: $primary-accent-color;
+        background: transparent;
+    }
 }
