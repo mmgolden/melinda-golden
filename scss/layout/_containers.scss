@@ -43,11 +43,27 @@ section {
     }
 }
 
+/************* Content *************/
+#content {
+    img {
+        display: block;
+        margin: 40px auto 0 auto;
+        max-width: 100%;
+    }
+    h2 {
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+    .teal-btn {
+        margin: 40px auto;
+    }
+}
+
 /************* Contact *************/
 .social-icons {
     list-style: none;
     margin-bottom: 0;
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     padding-left: 0;

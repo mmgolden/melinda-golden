@@ -1,39 +1,4 @@
 /************* Hero *************/
 #hero {
-    background: url('../images/hero.jpg');
-    background-size: cover;
-    background-position: 50% 50%;
-    height: 350px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding: 0 15px;
-    @media screen and (min-width:767px) {
-        height: 650px;
-    }
-    h2 {
-        color: #fff;
-        z-index: 1;
-        text-align: center;
-        font-size: $medium-font-size;
-        line-height: 1.5;
-        @media screen and (min-width:767px) {
-            width: 60%;
-            font-size: 2.25em;
-        }
-    }
-    &::after {
-        content: '';
-        background: linear-gradient(to right, rgba(58,197,202,0.7) 0%,rgba(58,177,201,0.7) 100%); 
-        height: 350px;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        @media screen and (min-width:767px) {
-            height: 650px;
-        }
-    }
+    @include banner("../images/hero.jpg");
 }
