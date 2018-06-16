@@ -101,7 +101,7 @@
     }
     .navbar-nav>li>a {
         color: $primary-font-color;
-        transition: color 0.8s;
+        transition: color 0.5s;
         &:focus,
         &:hover {
             color: $primary-accent-color;

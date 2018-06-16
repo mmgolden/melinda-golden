@@ -57,6 +57,10 @@ section {
     .teal-btn {
         margin: 40px auto;
     }
+    .icon {
+        height: 180px;
+        margin: 60px auto 40px auto;
+    }
 }
 
 /************* Contact *************/
@@ -81,7 +85,7 @@ section {
         height: 50px;
         border-radius: 50%;
         border: 2px solid $primary-accent-color;
-        transition: background 0.8s;
+        transition: background 0.5s;
         &:hover {
             background: transparent;
             i {
